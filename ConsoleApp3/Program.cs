@@ -29,7 +29,7 @@ int _tmain(int argc, _TCHAR* argv[])
 	{
 		Rect[i].print();
 	}
-	cout << "Êîëè÷åñòâî êâàäðàòîâ=";
+	cout << "Число квадратов=";
 	int count = 0, maxSs = 0, maxSp = 0, maxPp = 0, maxPs = 0,
 		number = 0, number1 = 0, number2 = 0, number3 = 0;
 	for (int i = 0; i < SIZE; i++)
@@ -65,19 +65,19 @@ int _tmain(int argc, _TCHAR* argv[])
 		}
 	}
 	cout << count << endl;
-	cout << "Êîëè÷åñòâî ïðÿìîóãîëüíèêîâ=" << SIZE - count << endl;
+	cout << "Количество прямоугольников=" << SIZE - count << endl;
 	if (count > 0)
 	{
-		cout << "Ìàêñèìàëüíÿ  ïëîùàäü êâàäðàòà=" << maxSs << endl;
+		cout << "Максимальная площадь квадрата=" << maxSs << endl;
 		Rect[number].print();
-		cout << "Ìàêñèìàëüíûé ïåðèìåòð êâàäðàòà=" << maxSp << endl;
+		cout << "Максимальный периметр квадрата=" << maxSp << endl;
 		Rect[number1].print();
 	}
 	if (count != SIZE)
 	{
-		cout << "Ìàêñèìàëüíàÿ ïëîùàäü ïðÿìîóãîëüíèêà=" << maxPs << endl;
+		cout << "Максимальная площадь прямоугольника=" << maxPs << endl;
 		Rect[number2].print();
-		cout << "Ìàêñèìàëüíûé ïåðèìåòð ïðÿìîóãîëüíèêà=" << maxPp << endl;
+		cout << "Максимальный периметр прямоугольника=" << maxPp << endl;
 		Rect[number3].print();
 	}
 	return 0;
